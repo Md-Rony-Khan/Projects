@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Google Map</title>
+        <meta charset="utf-8">
+        <style>
+            #maparea{
+                height: 500px;
+            }
+        </style>
+    </head>
+    <body>
+        <input type="text" placeholder="Source" id="src">
+        <input type="text" placeholder="Destination" id="dst">
+        <input type="button" value="showpositions" onclick="showmarkers();">
+       <!-- <input type="button" value="showdirections" onclick="showdirections();">-->
+        <div id="maparea"></div>
+        
+        <script>
+            var map;
+            var mypos;
+            var src, dst;
+            var service;
+            var dirservice;
+            var dirrenderer;
+            function initmap(){
+                map=new google.maps.Map(document.getElementById('maparea'),{
+                    zoom: 15,
+                    center: {lat:23.73, lng:39.41},
+                    mapTypeId: 'hybrid'
+                });
+                service = new google.maps.places.PlacesService(map);
+                
+                dirservice=new google.maps.DirectionsService();
+                dirrenderer=new google.maps.DirectionsRenderer();
+                
+                dirrenderer.setMap(map);
+            }
+            
+            function showmarkers(){
+                var srcname=document.getElementById("src").value;
+                var dstname=document.getElementById("dst").value;
+                
+                var srcrequest = {
+                    query: srcname,
+                    fields: ['name', 'geometry'],
+                };
+
+                service.findPlaceFromQuery(srcrequest, function(results, status) {
+                    if (status === google.maps.places.PlacesServiceStatus.OK) {
+                        src=results[0].geometry.location;
+                      var srcmarker=new google.maps.Marker({position:results[0].geometry.location,map:map});
+                    }
+                });
+                
+                var dstrequest = {
+                    query: dstname,
+                    fields: ['name', 'geometry'],
+                };
+
+                service.findPlaceFromQuery(dstrequest, function(results, status) {
+                    if (status === google.maps.places.PlacesServiceStatus.OK) {
+                        dst=results[0].geometry.location;
+                      var dstmarker=new google.maps.Marker({position:results[0].geometry.location,map:map});
+                    }
+                });
+                
+            }
+            
+           // function showdirections(){
+               // var request={
+                 //   origin: src,
+                 //   destination: dst,
+                  //  travelMode: 'DRIVING'
+               // };
+                
+               // dirservice.route(request,function(result,status){
+                  //  if(status=='OK'){
+                       // dirrenderer.setDirections(result);
+                   // }
+               // });
+           // }
+            
+            if(navigator.geolocation){
+                navigator.geolocation.getCurrentPosition(setmypos,seterror);
+           }
+           else{
+                window.alert("Geolocation access error");
+           }
+            
+            function seterror(){
+               window.alert("navigator position finding error");
+            }
+            
+            function setmypos(pos){
+                mypos=new google.maps.LatLng(pos.coords.latitude,pos.coords.longitude);
+                map.setCenter(mypos);
+            }
+        </script>
+        <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDBQo65Mnk7E7AjNlBVRUYoSD6nBx5hGy8&libraries=places&callback=initmap" async defer></script>
+    </body>
+</html>

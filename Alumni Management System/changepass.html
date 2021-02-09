@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="img/MIST_Logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="http://cdn.ckeditor.com/4.6.1/standard/ckeditor.js"></script>
+    <title>Alumni Association | MIST</title>
+</head>
+<body>
+    <!--topbar-->
+    <nav class="navbar navbar-expand-md navbar-dark">
+        <div class="container justify-content-center">
+            <span style="font-family: 'Beth Ellen', cursive">“Alumni are the heart of MIST”. “Alumni Entrepreneurs are the Voice of MIST”</span>
+        </div> 
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#">Welcome,Rony</a></li>
+        </ul>        
+     </nav>
+   
+    
+
+    <!--NavBar-->
+     <nav class="navbar navbar-dark navbar-expand-md sticky-top">
+         <div class="container">
+             <a href="" class="navbar-brand">
+                 <img src="img/MIST_Logo.png" class="img-fluid" width="80" height="80" alt="MIST">
+             </a>
+             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link " href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link active" href="profile.html">Profile</a>
+                       </li>
+                       <li class="nav-item">
+                           <a class="nav-link" href="directory.html">Directory</a>
+                       </li>
+                       <li class="nav-item">
+                            <a class="nav-link" href="newsfeed.html">News Feed</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+         </div>
+     </nav>
+
+    
+
+         <!--Welcome-->
+         <section id="Profile">
+            <div class="container">
+              <div class="row py-5">
+              
+                <div class="col-md-2">
+                    <div class="list-group">
+                        <a href="profile.html" class="list-group-item active main-color-bg">
+                        <span class="glyphicon glyphicon-cog" aria-hidden="true"></span> Dashboard </a>
+                  <a href="editprofile.html" class="list-group-item"><span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span> Edit/Update Profile<span class="badge"></span></a>
+                  <a href="postnews.html" class="list-group-item "><span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span>Post News<span class="badge"></span></a>
+                        <a href="#" class="list-group-item"><span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span>Message<span class="badge"></span></a>
+                        <a href="changepass.html" class="list-group-item active"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> Settings <span class="badge"></span></a>
+                        <a href="index.html" class="list-group-item"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>Logout<span class="badge"></span></a>
+                    </div>
+                </div> 
+
+            <div class="col-md-8">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="mb-4 text-center">Password Change (User)</h4>
+                  <div class="Message-Area" style="    margin-top: 5px;
+                  margin-bottom: 5px;
+                  border-top: 1px solid #15563B;
+                  border-bottom: 1px solid #15563B;
+                  background-color: #f9f9f9;
+                  padding: 2px;">
+                        <label class="msgTitle">Message: </label>
+                        <span id="ctl00_MainContainer_lblMsg" style="color: red;"></span>
+                   </div>
+                  <div class="row">
+                    
+                    <div class="col-md-12">
+                            <div class="PasswordChangeByUser-container">
+                                    <div class="div-margin" style="margin:5px;">
+                                        <label class="display-inline field-Title" style="width:150px;">Current(Password)</label>
+                                        <sup class="warningCurrent">*</sup>
+                                        <input name="ctl00$MainContainer$txtCurrentPassword" type="password" id="ctl00_MainContainer_txtCurrentPassword" class="margin-zero input-Size" placeholder="Current Password" />
+                                    </div>
+                                    <div class="div-margin" style="margin:5px;">
+                                        <label class="display-inline field-Title" style="width:150px;">Type(New Password)</label>
+                                        <sup class="warningPassword">*</sup>
+                                        <input name="ctl00$MainContainer$txtPassword" type="password" id="ctl00_MainContainer_txtPassword" class="margin-zero input-Size" placeholder="New Password" />
+                                    </div>
+                                    <div class="div-margin" style="margin:5px;">
+                                        <label class="display-inline field-Title" style="width:150px;">Retype(Password)</label>
+                                        <sup class="warningRetypePassword">*</sup>
+                                        <input name="ctl00$MainContainer$txtRetypePassword" type="password" id="ctl00_MainContainer_txtRetypePassword" class="margin-zero input-Size" placeholder="Retype Password" />
+                                    </div>
+                                    <div class="div-margin" style="margin-top:20px;">
+                                        <label class="display-inline field-Title"></label>
+                                        <input type="submit" name="ctl00$MainContainer$btnUpdate" value="Update" onclick="return ValidationField();" id="ctl00_MainContainer_btnUpdate" class="margin-zero btn-size" />
+                                    </div>
+                                </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+         </div>
+            
+     </section>
+
+         
+
+        <!-- Footer -->
+        <footer id="copyright" class="py-3 text-light text-center">
+                <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div>
+                            Powered by <b>Edusoft Consultants Ltd</b><br />
+                            Copyright &copy; 2013 - 2019 Edusoft Consultants Ltd. All rights reserved.
+                        </div>
+                    </div>
+                </div>
+                </div>
+         </footer>
+    
+     
+
+
+
+
+
+
+
+
+
+ <script src="js/jquery.min.js"></script> 
+ <script src="js/jpopper.min.js"></script> 
+ <script src="js/bootstrap.min.js"></script>   
+
+ <script type="text/javascript">
+    $(document).ready(function () {
+
+    });
+
+    function ValidationField() {
+        $('#ctl00_MainContainer_lblMsg').text('');
+
+        if ($('#ctl00_MainContainer_txtCurrentPassword').val() == '') {
+            $('#ctl00_MainContainer_lblMsg').text('Current Password Please');
+            $('.warningCurrent').css('color', 'red');
+            return false;
+        }
+        else { $('.warningCurrent').css('color', 'black'); }
+
+        if ($('#ctl00_MainContainer_txtPassword').val() == '') {
+            $('#ctl00_MainContainer_lblMsg').text('New Password Please');
+            $('.warningPassword').css('color', 'red');
+            return false;
+        }
+        else { $('.warningPassword').css('color', 'black'); }
+
+        if ($('#ctl00_MainContainer_txtRetypePassword').val() == '') {
+            $('#ctl00_MainContainer_lblMsg').text('Retype New Password Please');
+            $('.warningRetypePassword').css('color', 'red');
+            return false;
+        }
+        else { $('.warningRetypePassword').css('color', 'black'); }
+
+        if ($('#ctl00_MainContainer_txtPassword').val() != $('#ctl00_MainContainer_txtRetypePassword').val()) {
+            $('#ctl00_MainContainer_lblMsg').text('Password Does not MATCH');
+            return false;
+        }
+        if ($('#ctl00_MainContainer_txtPassword').val() == $('#ctl00_MainContainer_txtRetypePassword').val()) {
+            $('#ctl00_MainContainer_lblMsg').text('Password Update Successfully');
+            return false;
+        }
+        if ($('#ctl00_MainContainer_txtPassword').val().length < 6) {
+            $('#ctl00_MainContainer_lblMsg').text('Password Length MUST be 6');
+            return false;
+        }
+    }
+</script>
+</body>
+</html>

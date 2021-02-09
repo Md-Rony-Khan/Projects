@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="img/MIST_Logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="http://cdn.ckeditor.com/4.6.1/standard/ckeditor.js"></script>
+    <title>Alumni Association | MIST</title>
+</head>
+<body>
+    <!--topbar-->
+    <nav class="navbar navbar-expand-md navbar-dark">
+        <div class="container justify-content-center">
+            <span style="font-family: 'Beth Ellen', cursive">“Alumni are the heart of MIST”. “Alumni Entrepreneurs are the Voice of MIST”</span>
+        </div> 
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#">Welcome,Rony</a></li>
+        </ul>        
+     </nav>
+   
+    
+
+    <!--NavBar-->
+     <nav class="navbar navbar-dark navbar-expand-md sticky-top">
+         <div class="container">
+             <a href="" class="navbar-brand">
+                 <img src="img/MIST_Logo.png" class="img-fluid" width="80" height="80" alt="MIST">
+             </a>
+             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link " href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link active" href="profile.html">Profile</a>
+                       </li>
+                       <li class="nav-item">
+                           <a class="nav-link" href="directory.html">Directory</a>
+                       </li>
+                       <li class="nav-item">
+                            <a class="nav-link" href="newsfeed.html">News Feed</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+         </div>
+     </nav>
+
+    
+
+         <!--Welcome-->
+         <section id="Profile">
+            <div class="container">
+              <div class="row py-5">
+              
+                <div class="col-md-2">
+                    <div class="list-group">
+                        <a href="profile.html" class="list-group-item active main-color-bg">
+                        <span class="glyphicon glyphicon-cog" aria-hidden="true"></span> Dashboard </a>
+                  <a href="editprofile.html" class="list-group-item active"><span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span> Edit/Update Profile<span class="badge"></span></a>
+                  <a href="postnews.html" class="list-group-item "><span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span>Post News<span class="badge"></span></a>
+                        <a href="#" class="list-group-item"><span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span>Message<span class="badge"></span></a>
+                        <a href="changepass.html" class="list-group-item"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> Settings <span class="badge"></span></a>
+                        <a href="index.html" class="list-group-item"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>Logout<span class="badge"></span></a>
+                    </div>
+                </div> 
+
+            <div class="col-md-10">
+              <div class="card">
+                <div class="card-body">  
+                 <div class="container">
+                    <h1>Edit Profile</h1>
+                      <hr>
+                        <div class="alert alert-info alert-dismissable">
+                          <a class="panel-close close" data-dismiss="alert">×</a> 
+                          <i class="fa fa-coffee"></i>
+                          This is an <strong>.alert</strong>. Use this to show important messages to the user.
+                        </div>
+                        <h3>Personal info</h3>
+                        <form class="form-horizontal" role="form">
+                          <div class="form-group">
+                            <label class="col-lg-3 control-label">First name:</label>
+                            <div class="col-lg-8">
+                              <input class="form-control" type="text" value="Rony">
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <label class="col-lg-3 control-label">Last name:</label>
+                            <div class="col-lg-8">
+                              <input class="form-control" type="text" value="Khan">
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <label class="col-lg-3 control-label">Company:</label>
+                            <div class="col-lg-8">
+                              <input class="form-control" type="text" value="CEO,Earnest Compny,USA">
+                            </div>
+                          </div>
+
+                          <hr>
+                          <h3>Previous Status</h3>
+                          <div class="form-group">
+                                <label class="col-lg-3 control-label">Company:</label>
+                                <div class="col-lg-8">
+                                  <input class="form-control" type="text" value="Senior Engineer,Earnest Company,USA.">
+                                </div>
+                            </div>
+                          <div class="form-group">
+                            <label class="col-lg-3 control-label">University:</label>
+                            <div class="col-lg-8">
+                              <input class="form-control" type="text" value="Student,Stamford University,Avon,UK.">
+                            </div>
+                          </div>
+
+                          <hr>
+                          <h3>General Info</h3>
+                          <div class="form-group">
+                                <label class="col-lg-3 control-label">Blood Group:</label>
+                                <div class="col-lg-8">
+                                  <input class="form-control" type="text" value="A[+]ve">
+                                </div>
+                            </div>
+                          <div class="form-group">
+                            <label class="col-lg-3 control-label">Date of Birth:</label>
+                            <div class="col-lg-8">
+                              <input class="form-control" type="text" value="26 December,1996">
+                            </div>
+                          </div>
+                          <hr>
+                          <h3>Skill</h3>
+                          <div class="form-group">
+                                <label class="col-lg-3 control-label">Expert In:</label>
+                                <div class="col-lg-8">
+                                  <input class="form-control" type="text" value="Angular JS">
+                                </div>
+                            </div>
+                          <div class="form-group">
+                            <label class="col-lg-3 control-label">Others:</label>
+                            <div class="col-lg-8">
+                              <input class="form-control" type="text" value="Folk Singer">
+                            </div>
+                          </div>
+                          <hr>
+
+                          <hr>
+                          <h3>Contact Info</h3>
+                          <div class="form-group">
+                            <label class="col-lg-3 control-label">Email:</label>
+                            <div class="col-lg-8">
+                              <input class="form-control" type="text" value="mkhan@gmail.com">
+                            </div>
+                          </div>
+                          <div class="form-group">
+                                <label class="col-lg-3 control-label">Phone:</label>
+                                <div class="col-lg-8">
+                                  <input class="form-control" type="text" value="+99054789522">
+                                </div>
+                              </div>
+                          <hr>
+                          <h3>Achievements & Research Info</h3>
+                          <div class="form-group">
+                            <label class="col-lg-3 control-label">Research Paper:</label>
+                            <div class="col-lg-8">
+                              <input class="form-control" type="text" value="">
+                            </div>
+                          </div>
+                          <div class="form-group">
+                                <label class="col-lg-3 control-label">Achievements:</label>
+                                <div class="col-lg-8">
+                                  <input class="form-control" type="text" value="">
+                                </div>
+                              </div>
+                          <hr>
+
+
+                          <h3>Change Picture</h3>
+                          <div>
+                                <img src="img/person4.jpg" class="img-fluid rounded-circle w-25 mb-3" alt="Susan Williams">
+                                <h6>Upload a different photo...</h6>
+                                
+                                <input type="file" class="form-control">
+                              </div>
+
+
+
+                          <hr>
+
+                          <div class="form-group">
+                            <label class="col-md-3 control-label"></label>
+                            <div class="col-md-8">
+                              <input type="button" class="btn btn-primary" value="Save Changes">
+                              <span></span>
+                              <input type="reset" class="btn btn-default" value="Cancel">
+                            </div>
+                          </div>
+                        </form>
+                  
+                </div>
+              <hr>
+            </div>
+         </div>
+       </div>
+     </div>
+    </div>    
+  </section>
+    
+         
+
+        <!-- Footer -->
+        <footer id="copyright" class="py-3 text-light text-center">
+                <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div>
+                            Powered by <b>Edusoft Consultants Ltd</b><br />
+                            Copyright &copy; 2013 - 2019 Edusoft Consultants Ltd. All rights reserved.
+                        </div>
+                    </div>
+                </div>
+                </div>
+         </footer>
+    
+
+
+
+
+
+
+
+
+ <script src="js/jquery.min.js"></script> 
+ <script src="js/jpopper.min.js"></script> 
+ <script src="js/bootstrap.min.js"></script>   
+</body>
+</html>
